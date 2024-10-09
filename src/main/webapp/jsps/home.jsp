@@ -9,8 +9,8 @@
 </head>
 </head>
 <body>
-<h1 align="center">Eghosa Agunu DevOps</h1>
-<h1 align="center">Maven Application Real Time Scenarios Project</h1>
+<h1 align="center">Hello Wellcome, To Daniel Overo DevOps Wep Developer Application</h1>
+<h1 align="center">Maven Application Real Time World Scenarion Optimization</h1>
 <hr>
 <br>
 	<h1><h3> Server Side IP Address </h3><br>
@@ -34,12 +34,12 @@ out.println("Server Host Name :: "+inetAddress.getHostName());
 		<img src="images/mithunlogo.jpg" alt="" width="100">
 	</span>
 	<span style="font-weight: bold;">
-		Eghosa DevOps,
-		3523 Shadow Bluff CT,Houston,
-		Texas,
-		+8324387775.
+		Daniel DevOps,
+		Marvista ln,
+		Rosharon Tx,
+		+(929) 316-5900.
 		<br>
-		<a href="mailto:eagunuworld@gmail.com">Mail to Eghosa Technologies</a>
+		<a href="mailto:eagunuworld@gmail.com">Mail to Dan Technologies</a>
 	</span>
 </div>
 <hr>
