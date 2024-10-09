@@ -35,8 +35,8 @@ out.println("Server Host Name :: "+inetAddress.getHostName());
 	</span>
 	<span style="font-weight: bold;">
 		Daniel DevOps,
-		Marvista ln,
-		Rosharon Tx,
+		321 beach 57th,
+		Farrockawy Ny,
 		+(929) 316-5900.
 		<br>
 		<a href="mailto:eagunuworld@gmail.com">Mail to Dan Technologies</a>
