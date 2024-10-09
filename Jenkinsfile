@@ -31,14 +31,14 @@ pipeline {
        }
     }
 
-    stage ('DEV Deploy') {
+    stage ('Dev Environment Deployment') {
       steps {
       echo "deploying to DEV Env "
       deploy adapters: [tomcat9(credentialsId: 'apache-tomcat-9-username-passord', path: '', url: 'http://18.224.8.212:8085/')], contextPath: 'mss-walmart-dev-app', war: '**/*.war'
       }
     }
 
-    stage('QA approve') {
+    stage('QA approve, pls approve this chagne for testing') {
             steps {
                 input('Do you want to proceed?')
             }
@@ -51,7 +51,7 @@ pipeline {
     //         }
     //     }
 
-    stage ('QA Deploy') {
+    stage ('QA Deploy, Application functional Testing Has Started') {
       steps {
       echo "deploying to QA Env "
       deploy adapters: [tomcat9(credentialsId: 'apache-tomcat-9-username-passord', path: '', url: 'http://18.224.8.212:8085/')], contextPath: 'mss-walmart-qa-app', war: '**/*.war'
