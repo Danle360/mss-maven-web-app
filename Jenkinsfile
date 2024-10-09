@@ -21,7 +21,7 @@ pipeline {
   stages {
     stage('Cloning Git') {
             steps {
-                checkout([$class: 'GitSCM', branches: [[name: '*/mss-walmart-dev']], extensions: [], userRemoteConfigs: [[credentialsId: 'democalculus-github-login-creds', url: 'https://github.com/democalculus/mss-maven-web-app.git']]])
+                checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'democalculus-github-login-creds', url: 'https://github.com/Danle360/mss-maven-web-app.git']]])
             }
         }
 
