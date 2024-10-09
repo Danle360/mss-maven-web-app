@@ -34,7 +34,7 @@ pipeline {
     stage ('DEV Deploy') {
       steps {
       echo "deploying to DEV Env "
-      deploy adapters: [tomcat9(credentialsId: 'apache-tomcat-9-username-passord', path: '', url: 'http://18.224.8.212:8085/')], contextPath: 'mss-walmart-dev-app', war: '/*.war'
+      deploy adapters: [tomcat9(credentialsId: 'apache-tomcat-9-username-passord', path: '', url: 'http://18.224.8.212:8085/')], contextPath: 'mss-walmart-dev-app', war: '**/*.wa'
       }
     }
 
@@ -54,7 +54,7 @@ pipeline {
     stage ('QA Deploy') {
       steps {
       echo "deploying to QA Env "
-      deploy adapters: [tomcat9(credentialsId: 'apache-tomcat-9-username-passord', path: '', url: 'http://18.224.8.212:8085/')], contextPath: 'mss-walmart-qa-app', war: '/*.war'
+      deploy adapters: [tomcat9(credentialsId: 'apache-tomcat-9-username-passord', path: '', url: 'http://18.224.8.212:8085/')], contextPath: 'mss-walmart-qa-app', war: '**/*.wa'
       }
     }
 
