@@ -1,4 +1,4 @@
-//http://3.21.241.60:8080/manage/configure
+//http://3.17.180.247:8080/manage/configure
 pipeline {
   agent any
   tools {
@@ -6,15 +6,15 @@ pipeline {
   }
 
   environment {
-    containerName = "http://3.21.241.60:8085/mss-walmart-qa-app/"
+    containerName = "http://3.17.180.247:8085/mss-walmart-qa-app/"
     serviceName = "devsecops-svc"
     imageName = "siddharth67/numeric-app:${GIT_COMMIT}"
-    applicationURL = "http://3.21.241.60:8085/mss-walmart-dev"
-    deploymentName = "http://3.21.241.60:8085/mss-walmart-dev-app/"
+    applicationURL = "http://3.17.180.247:8085/mss-walmart-dev"
+    deploymentName = "http://3.17.180.247:8085/mss-walmart-dev-app/"
     //containerName = "devsecops-container"
     //serviceName = "devsecops-svc"
   //  imageName = "siddharth67/numeric-app:${GIT_COMMIT}"
-     jenkins_server_url = "http://3.21.241.60:8080/"
+     jenkins_server_url = "http://3.17.180.247:8080/"
     mss_web_app = "/increment/99"
   }
 
@@ -34,7 +34,7 @@ pipeline {
     stage ('Dev Environment Deployment') {
       steps {
       echo "deploying to DEV Env "
-      deploy adapters: [tomcat9(credentialsId: 'apache-tomcat-11-username-passord', path: '', url: 'http://3.21.241.60:8085/')], contextPath: 'mss-walmart-dev-app', war: '**/*.war'
+      deploy adapters: [tomcat9(credentialsId: 'apache-tomcat-11-username-passord', path: '', url: 'http://3.17.180.247:8085/')], contextPath: 'mss-walmart-dev-app', war: '**/*.war'
       }
     }
 
@@ -54,7 +54,7 @@ pipeline {
     stage ('QA Deploy, Application functional Testing Has Started') {
       steps {
       echo "deploying to QA Env "
-      deploy adapters: [tomcat9(credentialsId: 'apache-tomcat-11-username-passord', path: '', url: 'http://3.21.241.60:8085/')], contextPath: 'mss-walmart-qa-app', war: '**/*.war'
+      deploy adapters: [tomcat11(credentialsId: 'apache-tomcat-11-username-passord', path: '', url: 'http://3.17.180.247:8085/')], contextPath: 'mss-walmart-qa-app', war: '**/*.war'
       }
     }
 
