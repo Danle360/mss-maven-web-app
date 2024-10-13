@@ -35,6 +35,7 @@ pipeline {
       steps {
       echo "deploying to DEV Env "
       deploy adapters: [tomcat11(credentialsId: 'apache-tomcat-11-username-passord', path: '', url: 'http://3.17.180.247:8085/')], contextPath: 'mss-walmart-dev-app', war: '**/*.war'
+      }
     }
 
     stage('QA approve, pls approve this chagne for testing') {
