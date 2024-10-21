@@ -1,0 +1,6 @@
+projectKey=com.mt:mss-maven-web-app
+serverUrl=http://3.138.154.32:9000
+serverVersion=9.9.7.96285
+dashboardUrl=http://3.138.154.32:9000/dashboard?id=com.mt%3Amss-maven-web-app
+ceTaskId=AZKwwuvy6kYNTm4LRn2V
+ceTaskUrl=http://3.138.154.32:9000/api/ce/task?id=AZKwwuvy6kYNTm4LRn2V
