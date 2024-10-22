@@ -89,13 +89,13 @@
 	<distributionManagement>
 
 	    <repository>
-	      <id>mss-maven-web-app</id>
+	      <id>nexus</id>
 	      <name>maven-releases</name>
 	      <url>http://172.31.17.30:8081/repository/maven-releases/</url>
 	    </repository>
 
 	    <snapshotRepository>
-	      <id>mss-maven-web-app</id>
+	      <id>nexus</id>
 	      <name>maven-snapshots</name>
 	      <url>http://172.31.17.30:8081/repository/maven-snapshots/</url>
 	    </snapshotRepository>
