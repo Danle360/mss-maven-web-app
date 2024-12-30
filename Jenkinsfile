@@ -35,7 +35,7 @@ pipeline {
     // Where your Nexus is running
     NEXUS_URL = "34.73.34.80:8081"
     // Repository where we will upload the artifact
-    NEXUS_REPOSITORY = "danle360/mss_snow_prod_web_app"
+    NEXUS_REPOSITORY = "mss_snow_prod_web_app"
     // Jenkins credential id to authenticate to Nexus OSS
     NEXUS_CREDENTIAL_ID = "nexus-username-password-creds"
     //sonar qube
