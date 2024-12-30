@@ -3,7 +3,7 @@
 
 pipeline {
 
-  agent { label 'eagunu-slave-agent' }
+  agent { label 'google-jenkins-slave' }
 
   options {
        buildDiscarder logRotator(
