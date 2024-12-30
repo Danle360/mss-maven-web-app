@@ -64,7 +64,7 @@ metadata:
   name: mss-maven-svc
   namespace: ibm-ucd
 spec:
-  type:LoadBalancer #ClusterIP
+  type: LoadBalancer #ClusterIP
   selector:
     app: mss-maven-svc
   ports:
