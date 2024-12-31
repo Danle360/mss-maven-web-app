@@ -77,3 +77,20 @@ kubectl get configMaps --all-namespace
 #username is  admin 
 #use below link to get temporary pwd 
 kubectl get secret --namespace monitor grafana -o jsonpath="{.data.admin-password}" | base64 --decode ; echo
+http://gra.eagunu4live.cloud/dashboards
+http://mongodb.eagunu4live.cloud/java-web-app/
+http://mongodb.eagunu4live.cloud/maven-web-app
+
+#Grafana Dasboard setup
+name: prometheus
+Prometheus server URL: http://prom.eagunu4live.cloud
+
+Node exporter
+11074
+1860
+15178
+6417
+
+9844
+
+kubernetes cluster monitoring: 315
