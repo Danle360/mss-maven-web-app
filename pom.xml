@@ -98,13 +98,13 @@
 	    <repository>
 	      <id>nexus</id>
 	      <name>Eghosa Technologies Releases Nexus Repository</name>
-	      <url>http://34.125.253.100:8081/repository/eagunu-mvn-released-mss/</url>
+	      <url>http://35.196.125.83:8081/repository/dan-mvn-release/</url>
 	    </repository>
 
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>Eghoa Technologies Snapshot Nexus Repository </name>
-	      <url>http://34.125.253.100:8081/repository/eagunu-mvn-snapshot-mss/</url>
+	      <url>http://35.196.125.83:8081/repository/dan-mvn-snapshot/</url>
 	    </snapshotRepository>
 
 	</distributionManagement>
