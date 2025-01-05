@@ -10,7 +10,7 @@
 </head>
 <body>
 <h1 align="center">DevOps Engineer Is An IT Professional Who Works To Improve Collaboration And Productivity Between Development And Operations Teams In An Organization.</h1>
-<h1 align="center"> Eghosa Agunu Is A DevOps Engineer!</h1>
+<h1 align="center"> Daniel Overo Is A DevOps Engineer!</h1>
 <hr>
 <div style="text-align: center;">
 	<span>
