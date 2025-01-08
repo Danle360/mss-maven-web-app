@@ -33,7 +33,7 @@ pipeline {
     // This can be http or https
     NEXUS_PROTOCOL = "http"
     // Where your Nexus is running
-    NEXUS_URL = "35.196.125.83:8081"
+    NEXUS_URL = "34.75.177.74:8081"
     // Repository where we will upload the artifact
     NEXUS_REPOSITORY = "mss_snow_prod_web_app"
     // Jenkins credential id to authenticate to Nexus OSS
