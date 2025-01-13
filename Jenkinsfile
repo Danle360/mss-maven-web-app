@@ -45,7 +45,7 @@ pipeline {
     stage('Cloning Git') {
             steps {
                 //checkout([$class: 'GitSCM', branches: [[name: '*/prod-master']], extensions: [], userRemoteConfigs: [[credentialsId: 'democalculus-github-login-creds', url: 'https://github.com/democalculus/kubana-maven-web-app.git']]])
-                git credentialsId: 'GIT_CREDENTIALS', url:  'https://github.com/Danle360/mss-maven-web-app.git',branch: 'mss_snow_master'
+                git credentialsId: 'GIT_CREDENTIALS', url:  'https://github.com/Danle360/2025-mave-app.git',branch: 'mss_snow_master'
             }
         }
 
